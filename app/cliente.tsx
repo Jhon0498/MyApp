@@ -3,14 +3,14 @@ import { View, Text, StyleSheet, TouchableOpacity, Image, TextInput } from 'reac
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'; // Importando ícones
 
 
-export default function criarContaAdvogado() {
+export default function criarContaCliente() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   return (
     <View style={styles.container}>
       <Image 
-        source={require('../../assets/images/DireitosConnect.png')} 
+        source={require('../assets/images/DireitosConnect.png')} 
         style={styles.logo} 
         accessibilityLabel="Logo do DireitosConnect"
       />

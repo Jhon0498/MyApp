@@ -9,7 +9,7 @@ const CasosJuridicos = () => {
       </View>
       <View style={styles.content}>
         <Image
-          source={require('../../assets/images/emptyIcon.png')} // Substitua pelo ícone correspondente
+          source={require('../assets/images/emptyIcon.png')} // Substitua pelo ícone correspondente
           style={styles.icon}
         />
         <Text style={styles.description}>

@@ -4,11 +4,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import login from './login';
 import index from './(tabs)/index';
-import tipoDeConta from './criacaoDeConta/tipoDeConta';
-import criarContaCliente from './criacaoDeConta/cliente';
-import criarContaAdvogado from './criacaoDeConta/advogado';
-import ValidacaoCadastro from './criacaoDeConta/validacaoCadastro';
-import contaValidada from './criacaoDeConta/contaValidada';
+import tipoDeConta from './tipoDeConta';
+import criarContaCliente from './cliente';
+import criarContaAdvogado from './advogado';
+import ValidacaoCadastro from './validacaoCadastro';
+import contaValidada from './contaValidada';
 
 export type RootStackParamList = {
     home: undefined;

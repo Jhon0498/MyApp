@@ -16,7 +16,7 @@ const ContaCriadaSucesso = () => {
 
       {/* Ícone de sucesso */}
       <Image
-        source={require('../../assets/images/success-check.png')} // Substitua pelo ícone correspondente
+        source={require('../assets/images/success-check.png')} // Substitua pelo ícone correspondente
         style={styles.successIcon}
         accessibilityLabel="Ícone de sucesso"
       />

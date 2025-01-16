@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native'; // Importação do hook de navegação
 import { createNativeStackNavigator, NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { RootStackParamList } from '../appNavigator';
+import { RootStackParamList } from './appNavigator';
   
   type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
@@ -12,6 +12,16 @@ const tipoDeConta = () => {
 
   return (
     <View style={styles.container}>
+
+      <Image 
+              source={require('../assets/images/DireitosConnect.png')} 
+              style={styles.logo} 
+              accessibilityLabel="Logo do DireitosConnect" 
+            />
+            <Text style={styles.title} accessibilityLabel="Título da aplicação">
+              DireitosConnect
+            </Text>
+
       <Text style={styles.title}>Seleção de Conta</Text>
       <Text style={styles.description}>Escolha uma opção:</Text>
 
@@ -39,6 +49,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
+  },
+  logo: {
+    width: 200,
+    height: 200,
+    marginBottom: 50,
   },
   title: {
     fontSize: 32,
