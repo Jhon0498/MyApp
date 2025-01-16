@@ -1,15 +1,18 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native'; // Importação do hook de navegação
+import { createNativeStackNavigator, NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../appNavigator';
 
 // Definindo os tipos para as telas da navegação
-type RootStackParamList = {
-  Home: undefined;
-  login: undefined; // Defina a tela de login como um destino da navegação
-};
+
+type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 const App = () => {
-  const navigation = useNavigation();  // Hook de navegação
+  const navigation = useNavigation<NavigationProp>();  // Hook de navegação
+  const Stack = createNativeStackNavigator<RootStackParamList>();
+
+  
 
   return (
     <View style={styles.container}>  
@@ -30,7 +33,7 @@ const App = () => {
         <Text style={styles.buttonText}>Iniciar</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => alert('Criar Conta')}>
+      <TouchableOpacity onPress={() => navigation.navigate('tipoDeConta')}>
         <Text style={styles.createAccount}>Inscrever-se</Text>
       </TouchableOpacity>
     </View>
