@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: '#B83B5E',
+    backgroundColor: '#5e2a2a',
     width: '100%',
     padding: 15,
     borderRadius: 8,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   createAccount: {
-    color: '#B83B5E',
+    color: '#fff',
     fontSize: 16,
     textDecorationLine: 'underline',
   },

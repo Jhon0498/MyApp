@@ -5,8 +5,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import login from './login';
 import index from './(tabs)/index';
 import tipoDeConta from './tipoDeConta';
-import criarContaCliente from './cliente';
-import criarContaAdvogado from './advogado';
+import criarContaCliente from './criarContaCliente';
+import criarContaAdvogado from './criarContaAdvogado';
 import ValidacaoCadastro from './validacaoCadastro';
 import contaValidada from './contaValidada';
 
@@ -31,9 +31,9 @@ export default function AppNavigator() {
           <Stack.Screen name="tipoDeConta" component={tipoDeConta} />
           <Stack.Screen name="criarContaCliente" component={criarContaCliente} />
           <Stack.Screen name="criarContaAdvogado" component={criarContaAdvogado} />
-          <Stack.Screen name="ValidacaoCadastro" component={ValidacaoCadastro} />
+          <Stack.Screen name="ValidacaoCadastro" component={ValidacaoCadastro} /> 
           <Stack.Screen name="contaValidada" component={contaValidada} />
         </Stack.Navigator>
       </NavigationContainer>
-    );
+    );  
   }

@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     color: '#fff', // Cor branca para o texto digitado
   },
   button: {
-    backgroundColor: '#B83B5E',
+    backgroundColor: '#5e2a2a',
     padding: 15,
     width: '100%',
     alignItems: 'center',
